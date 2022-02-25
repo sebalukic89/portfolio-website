@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+  <title>SzebDev | Front End Web Developer Portfolio website</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/profile.png" alt="logo">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">What I Know</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Szebasztian Lukity</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+    <img src="images/me.jpg" alt="a picture of Szebasztian" class="intro__img">
+
+    <a style="margin-top: 1rem;" href="#footer" class="btn">Contact Me</a>
+  </section>
+
+  <!-- My services -->
+  <section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I know</h2>
+
+    <div class="services">
+      <div class="service">
+        <h3> <i class="fa-solid fa-laptop-code"></i> Front End Development</h3>
+        <p>I love to code things from the ground up. This is something that brings me joy when I create something new
+          and useful.
+          Languages that I use to achieve this are HTML, CSS, SASS, JavaScript. The dev tools that I utilize in my work
+          are
+          VSCode, GitHub, Bootstrap, TailwindCSS, and Figma.</p>
+      </div> <!-- / service-->
+
+      <div class="service">
+        <h3><i class="fa-solid fa-magnifying-glass"></i> Search Engine Optimization (SEO)</h3>
+        <p>As a fundamental part of any website nowadays, I find it valuable to learn how to optimize my website so that
+          it is
+          visible to anyone on the world wide web. This is critically important knowledge to have in your arsenal as a
+          web
+          developer.
+        </p>
+      </div> <!-- / service-->
+
+      <div class="service">
+        <h3><i class="fa-solid fa-server"></i> Backend Development</h3>
+        <p>As the back-end is not as visual as the front end, I shied from it at first. However, I am getting the hang
+          of it and
+          actually enjoy working with it. At first, Node.js was a little daunting for a visual learner such as myself.
+          But now, I
+          find it to be fun to work with. I'm looking forward to broadening my knowledge even more when it comes to
+          back-end
+          technologies.</p>
+      </div> <!-- / service -->
+    </div> <!-- / services -->
+
+    <a href="#work" class="btn">See My Work</a>
+  </section>
+
+
+  <!-- About Me -->
+
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">Front end web developer based in Mississauga</p>
+
+    <div class="about-me__body">
+      <p>Since I started learning about developing web pages, I feel like a carpenter when making a nice kitchen.
+        Knowing that I
+        can create something from scratch gives me a sense of accomplishment.
+      </p>
+      <p>
+        I have been in love with lifelong learning since I was a young child. I'm naturally curious, and I guess I
+        inherited my
+        amazing parents. Having obtained a Bachelor of IT in Education from the University, I am highly motivated and
+        ready to
+        take up any challenges that arise.
+      </p>
+    </div>
+
+    <img src="images/main.jpg" alt="Szeb leaning on the fenc" class="about-me__img">
+  </section>
+
+  <!-- My Work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title section__title--work">My work</h2>
+    <p class="section__subtitle section__subtitle--work">A selection of my projects</p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 01 -->
+      <a href="google-clone.html" class="portfolio__item" target=”_blank”>
+        <img src="images/google.png" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 02 -->
+      <a href="tick-tack-toe.html" class="portfolio__item" target=”_blank”>
+        <img src="images/tick-tack-toe.png" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 03 -->
+      <a href="easybank.html" class="portfolio__item" target=”_blank”>
+        <img src="images/easybank.png" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 04 -->
+      <a href="pig-game.html" class="portfolio__item" target=”_blank”>
+        <img src="images/pig-game.png" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 05 -->
+      <a href="calculator.html" class="portfolio__item" target=”_blank”>
+        <img src="images/calculator.png" alt="" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 06 -->
+      <a href="todo-list.html" class="portfolio__item" target=”_blank”>
+        <img src="images/todo-list.png" alt="" class="portfolio__img">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer" id="footer">
+    <a href="mailto:lukicseba@gmail.com" class="footer__link">Contact me: lukicseba@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://www.linkedin.com/in/sebastijan-lukic-7452a390/" target=”_blank”>
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://twitter.com/LukicSebastijan" target=”_blank”>
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="https://github.com/sebalukic89" target=”_blank”>
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
