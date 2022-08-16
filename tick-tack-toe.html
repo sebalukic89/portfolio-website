@@ -1,91 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="script.js" defer></script>
+		<title>SzebDev | Front End Web Developer Portfolio website</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="script.js" defer></script>
-  <title>SzebDev | Front End Web Developer Portfolio website</title>
-</head>
+	<body>
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/profile.webp" alt="logo" />
+				</a>
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="index.html" class="nav__link">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="index.html#services" class="nav__link">My Services</a>
+					</li>
+					<li class="nav__item">
+						<a href="index.html#about" class="nav__link">About me</a>
+					</li>
+					<li class="nav__item">
+						<a href="index.html#work" class="nav__link">My Work</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-<body>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/profile.png" alt="logo">
-      </a>
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-        <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
-      </ul>
-    </nav>
-  </header>
+		<!-- Introduction -->
+		<section class="intro">
+			<h1 class="section__title section__title--intro">
+				The game <strong>Tic Tac Toe</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">
+				fun javascript game
+			</p>
+			<img src="images/tick-tack-toe.webp" alt="" class="intro__img" />
+		</section>
 
-  <!-- Introduction -->
-  <section class="intro">
-    <h1 class="section__title section__title--intro">
-      The game <strong>Tic Tac Toe</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro">fun javascript game</p>
-    <img src="images/tick-tack-toe.png" alt="" class="intro__img">
-  </section>
+		<div class="portfolio-item-individual">
+			<p>
+				I made this two-player game with the use of JavaScript, HTML, and CSS.
+				The longest part of making this game was the JavaScript code, which
+				makes the game interactive.
+			</p>
+			<img src="images/tick-tack-toe.webp" alt="" />
 
+			<div class="portfolio-item-individual__links">
+				<a href="https://sebalukic89.github.io/tic-tac-toe-game/" class="btn"
+					>Live</a
+				>
+				<a href="https://github.com/sebalukic89/tic-tac-toe-game" class="btn"
+					>Code</a
+				>
+			</div>
 
-  <div class="portfolio-item-individual">
-    <p>I made this two-player game with the use of JavaScript, HTML, and CSS. The longest part of making this game was
-      the
-      JavaScript code, which makes the game interactive.</p>
-    <img src="images/tick-tack-toe.png" alt="">
+			<p>
+				While building this game I learned so much about how to manipulate the
+				DOM, how to use the events in JavaScript to dynamically change what is
+				happening on the page.
+			</p>
+			<p>
+				The most challenging part was the game logic itself. I also learned that
+				with the use of the browser's local storage I was able to save the
+				player's names which made it useful for future projects.
+			</p>
+		</div>
 
-    <div class="portfolio-item-individual__links">
-      <a href="https://sebalukic89.github.io/tic-tac-toe-game/" class="btn">Live</a>
-      <a href="https://github.com/sebalukic89/tic-tac-toe-game" class="btn">Code</a>
-    </div>
+		<!-- Footer -->
 
-    <p>While building this game I learned so much about how to manipulate the DOM, how to use the events in JavaScript
-      to
-      dynamically change what is happening on the page.</p>
-    <p>The most challenging part was the game logic itself. I also learned that with the use of the browser's local
-      storage I
-      was able to save the player's names which made it useful for future projects.</p>
-  </div>
-
-  <!-- Footer -->
-
-  <footer class="footer">
-    <a href="mailto:lukicseba@gmail.com" class="footer__link">Contact me: lukicseba@gmail.com</a>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://www.linkedin.com/in/sebastijan-lukic-7452a390/">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://twitter.com/LukicSebastijan">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://github.com/sebalukic89">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
-</body>
-
+		<footer class="footer">
+			<a href="mailto:lukicseba@gmail.com" class="footer__link"
+				>Contact me: lukicseba@gmail.com</a
+			>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						href="https://www.linkedin.com/in/sebastijan-lukic-7452a390/"
+					>
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						href="https://twitter.com/LukicSebastijan"
+					>
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/sebalukic89">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
 </html>

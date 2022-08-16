@@ -1,95 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="script.js" defer></script>
+		<title>SzebDev | Front End Web Developer Portfolio website</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="script.js" defer></script>
-  <title>SzebDev | Front End Web Developer Portfolio website</title>
-</head>
+	<body>
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/profile.webp" alt="logo" />
+				</a>
+			</div>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="index.html" class="nav__link">Home</a>
+					</li>
+					<li class="nav__item">
+						<a href="index.html#services" class="nav__link">My Services</a>
+					</li>
+					<li class="nav__item">
+						<a href="index.html#about" class="nav__link">About me</a>
+					</li>
+					<li class="nav__item">
+						<a href="index.html#work" class="nav__link">My Work</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-<body>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/profile.png" alt="logo">
-      </a>
+		<!-- Introduction -->
+		<section class="intro">
+			<h1 class="section__title section__title--intro">
+				The game<strong>Pig Game</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">two player game</p>
+			<img src="images/pig-game.webp" alt="" class="intro__img" />
+		</section>
 
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-        <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
-        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
-      </ul>
-    </nav>
-  </header>
+		<div class="portfolio-item-individual">
+			<p>
+				This is a simple casino-style game in javascript. All you have to do is
+				roll the dice and try to reach 100 points faster than your opponent
+				player. This is a simple dice game with many simple game rules. You will
+				roll the dice and try to earn as many points as you can. Remember, two
+				6’s in succession will result in losing all the points you collected
+				while rolling the dice. You can also set the threshold(minimum winning
+				points) value on your own.
+			</p>
+			<img src="images/pig-game.webp" alt="" />
 
-  <!-- Introduction -->
-  <section class="intro">
-    <h1 class="section__title section__title--intro">
-      The game<strong>Pig Game</strong>
-    </h1>
-    <p class="section__subtitle section__subtitle--intro">two player game</p>
-    <img src="images/pig-game.png" alt="" class="intro__img">
-  </section>
+			<div class="portfolio-item-individual__links">
+				<a href="https://sebalukic89.github.io/pig-game-js/" class="btn"
+					>Live</a
+				>
+				<a href="https://github.com/sebalukic89/pig-game-js" class="btn"
+					>Code</a
+				>
+			</div>
 
+			<p>
+				I have learned the importance of DOM manipulation, event handling, and
+				its ability to make applications written in JavaScript dynamic.
+			</p>
+			<p>
+				It was another project that showed me the importance of the basic
+				knowledge of JavaScript.
+			</p>
+		</div>
 
-  <div class="portfolio-item-individual">
-    <p>This is a simple casino-style game in javascript. All you have to do is roll the dice and try to reach 100 points
-      faster
-      than your opponent player. This is a simple dice game with many simple game rules. You will roll the dice and try
-      to
-      earn as many points as you can. Remember, two 6’s in succession will result in losing all the points you collected
-      while
-      rolling the dice. You can also set the threshold(minimum winning points) value on your own.</p>
-    <img src="images/pig-game.png" alt="">
+		<!-- Footer -->
 
-    <div class="portfolio-item-individual__links">
-      <a href="https://sebalukic89.github.io/pig-game-js/" class="btn">Live</a>
-      <a href="https://github.com/sebalukic89/pig-game-js" class="btn">Code</a>
-    </div>
-
-    <p>I have learned the importance of DOM manipulation, event handling, and its ability to make applications written
-      in
-      JavaScript dynamic.
-    </p>
-    <p>It was another project that showed me the importance of the basic knowledge of JavaScript.</p>
-  </div>
-
-  <!-- Footer -->
-
-  <footer class="footer">
-    <a href="mailto:lukicseba@gmail.com" class="footer__link">Contact me: lukicseba@gmail.com</a>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://www.linkedin.com/in/sebastijan-lukic-7452a390/">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://twitter.com/LukicSebastijan">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://github.com/sebalukic89">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
-</body>
-
+		<footer class="footer">
+			<a href="mailto:lukicseba@gmail.com" class="footer__link"
+				>Contact me: lukicseba@gmail.com</a
+			>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						href="https://www.linkedin.com/in/sebastijan-lukic-7452a390/"
+					>
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						href="https://twitter.com/LukicSebastijan"
+					>
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/sebalukic89">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
 </html>
